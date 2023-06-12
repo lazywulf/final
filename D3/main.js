@@ -1,4 +1,4 @@
-d3.csv("./data/Spotify_Youtube.csv").then(
+d3.csv("../data/Spotify_Youtube.csv").then(
     data => {
     // 資料處理
     data.forEach(function (d) {
