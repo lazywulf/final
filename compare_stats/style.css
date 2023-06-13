@@ -13,28 +13,28 @@ h3 {
 }
 
 svg {
-    border: 1px solid #ccc;
+    border: 3px solid #9d8bf7;
     }
     .axis .domain{
-    stroke:none;
+    stroke:black;
     }
     .x line{
-    stroke: white;
+    stroke: rgb(7, 7, 7);
     }
 
 button {
     outline: none;
     color: #555;
-    border-color: #eee;
+    border-color: #d7d70d;
     background: #fefefe;
     /*padding: 3px 0px;*/
-    width: 48px;
+    width: 75px;
     text-align: center;
     transition: all 200ms;
 }
 
 button:hover {
-    background: lightgoldenrodyellow;
+    background: rgb(145, 221, 169);
 }
 
 button:focus {
