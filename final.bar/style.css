@@ -1,0 +1,76 @@
+/*
+0.4rem: 0.4 "relatively"
+*/
+body {
+    font-weight: bold;
+    margin: 2rem;
+}
+
+h3 {
+    font-weight: 500;
+    color: #555;
+    margin: 0.4rem 0;
+}
+
+svg {
+    border: 3px solid #9d8bf7;
+    }
+    .axis .domain{
+    stroke:black;
+    }
+    .x line{
+    stroke: rgb(7, 7, 7);
+    }
+
+button {
+    outline: none;
+    color: #555;
+    border-color: #d7d70d;
+    background: #fefefe;
+    /*padding: 3px 0px;*/
+    width: 75px;
+    text-align: center;
+    transition: all 200ms;
+}
+
+button:hover {
+    background: rgb(145, 221, 169);
+}
+
+button:focus {
+    background: lightpink;
+}
+
+/* interactive 詳細資訊視窗設定 */
+.tooltip{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /*避免出現連結或其他預設行為*/
+    background: #eee;
+    max-width: 200px;
+    }
+    .tip-header{
+    border-bottom: 2px solid white;
+    padding: 0.9rem 1rem;
+    }
+    .tip-body{
+    padding: 0.2rem 0;
+    }
+    h3,h4{
+    font-size: 0.9rem;
+    color:#555;
+    margin: 0;
+    }
+    h4{
+    font-weight: normal;
+    }
+    .tip-info{
+    margin: 0;
+    padding: 0.3rem 1em;
+    font-size: 0.8em;
+    }
+    /*偶數元素設定不同背景樣式*/
+    .tip-info:nth-of-type(even){
+    background: #e0e0e0;
+    }
