@@ -3,7 +3,6 @@ import {
     processMap
 } from "./func/converter.js";
 import {
-    chooseData,
     setupCanvas_teach
 } from "./func/plot.js";
 import {
@@ -21,6 +20,6 @@ d3.csv("../data/Spotify_Youtube.csv", type).then(
 
         const data = processMap(prepared);
         console.log(data);
-        setupCanvas_teach(chooseData("energy", data), filtered);
+        setupCanvas_teach(data, filtered);
     }
 );

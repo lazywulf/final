@@ -27,15 +27,15 @@ export function processMap(mapArray) {
         "tempo"
     ];
 
-    console.log(mapArray);
     for (var i = 0; i < 10; i++) {
         temp.push(new Map());
-        temp[i]["dancibility"] = i;
+        temp[i]["danceability"] = i;
     }
     for (var i = 0; i < 4; i++) {
         for (let [key, val] of mapArray[dataKey[i]]) {
             temp[key][dataKey[i]] = val;
         }
     }
+    temp.sort((a, b) => b["danceability"] - a["danceability"])
     return temp;
 }
