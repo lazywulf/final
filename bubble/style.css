@@ -1,0 +1,58 @@
+#bubble-chart-container svg
+{
+    /* Border can be modified or removed. */
+    border: 1px solid #ccc;
+}
+
+#bubble-chart-container svg .header
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#bubble-chart-container svg .header .secondary
+{
+    font-size: 1.2rem;
+    font-weight: normal;
+    fill: #555;
+}
+
+#bubble-chart-container svg .bubble {
+    stroke-width: 2px;
+    stroke: white;
+}
+
+#bubble-chart-container svg .bubble:hover {
+    stroke: #444;
+}
+
+#bubble-chart-container .legend .circle {
+    stroke: #222;
+    fill: none;
+}
+
+#bubble-chart-container .legend .segment {
+    stroke: #222;
+    stroke-dasharray: 2, 2;
+}
+
+#bubble-chart-container .legend .text {
+    font-size: 0.7rem;
+    fill: #555;
+}
+
+#bubble-chart-tooltip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #222;
+    color: #eee;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+#bubble-chart-tooltip .tip-row {
+    margin: 0rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+}
